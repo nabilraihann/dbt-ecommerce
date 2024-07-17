@@ -1,1 +1,1 @@
-[![dag](https://github.com/nabilraihann/dbt-ecommerce/blob/main/dbt-dag.png)]
+![dag](https://github.com/nabilraihann/dbt-ecommerce/blob/main/dbt-dag.png)
