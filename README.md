@@ -11,16 +11,18 @@ This repository contains a DBT (Data Build Tool) project for e-commerce data ana
 ```plaintext
 dbt-ecommerce/
 ├── README.md
-├── analysis/
-├── data/
-├── dbt_project.yml
-├── logs/
-├── models/
-│   ├── stg/
-│   |-- mart/
-├── snapshots/
-├── tests/
-└── target/
+├── requirements.txt
+└── dbt_ecommerce/
+   ├── analysis/
+   ├── data/
+   ├── dbt_project.yml
+   ├── logs/
+   ├── models/
+   │   ├── stg/
+   │   └── mart/
+   ├── snapshots/
+   ├── tests/
+   └── target/
 ```
 
 ## Prerequisites
@@ -73,8 +75,22 @@ Additionally, make sure you have installed:
 To run the DBT project and build the models:
 
 ```bash
+cd dbt_ecommerce
 dbt run
+```
 
+### Documentation
+
+To generate project documentation:
+
+```bash
+dbt docs generate
+```
+
+To serve the documentation locally:
+
+```bash
+dbt docs serve
 ```
 
 ### DBT dag result
