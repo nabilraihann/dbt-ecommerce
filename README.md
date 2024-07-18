@@ -77,4 +77,6 @@ dbt run
 
 ```
 
+### DBT dag result
+
 ![dag](https://github.com/nabilraihann/dbt-ecommerce/blob/main/dbt-dag.png)
