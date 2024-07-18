@@ -27,7 +27,7 @@ dbt-ecommerce/
 
 ## Prerequisites
 
-Before running this project, ensure you have followed the instructions in this repository: [ClickHouse E-commerce](https://github.com/nabilraihann/clickhouse-ecommerce)
+Before running this project, ensure you have followed the instructions in this repository: [ClickHouse E-commerce](https://github.com/nabilraihann/clickhouse-ecommerce) to activate your ClickHouse instance as an OLAP database.
 
 Additionally, make sure you have installed:
 
