@@ -22,7 +22,7 @@ FROM
   ON p.product_id = so.product_id
   LEFT JOIN(
     SELECT
-      o.order_id AS A,
+      o.order_id AS a,
       r.order_id AS b,
       CASE
         WHEN r.order_id != 0 THEN 'Return'
@@ -32,8 +32,7 @@ FROM
       {{ ref('stg_ecommerce_db_orders') }} AS o
       LEFT JOIN {{ ref('stg_ecommerce_db_returns') }} AS r
       ON o.order_id = r.order_id
-  ) AS ro
-  ON so.order_id = ro.a
+  ) AS ro ON so.order_id = ro.a
 WHERE
   ro.return_status = 'Not Return'
 GROUP BY

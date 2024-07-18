@@ -5,7 +5,7 @@
 WITH return_orders AS (
 
   SELECT
-    o.order_id AS A,
+    o.order_id AS a,
     r.order_id AS b,
     CASE
       WHEN r.order_id != 0 THEN 'Return'
