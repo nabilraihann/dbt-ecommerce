@@ -40,3 +40,4 @@ FROM
   ON ord.product_id = sup.product_id
   LEFT JOIN {{ ref('stg_ecommerce_db_payment_info') }} AS pym
   ON ord.order_id = pym.order_id
+group by 1,2,3,4,5,6,7,8,9,10,11
